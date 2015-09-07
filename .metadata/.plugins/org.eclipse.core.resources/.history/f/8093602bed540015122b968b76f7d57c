@@ -1,0 +1,12 @@
+
+public class Dealer extends Player {
+	
+	String status = "";
+	for(Card card : hand.getHand()){
+		status += card.toString() + "\n";
+	}
+	status += "Current score: " + hand.calculateScore();
+	return status;
+}
+
+}

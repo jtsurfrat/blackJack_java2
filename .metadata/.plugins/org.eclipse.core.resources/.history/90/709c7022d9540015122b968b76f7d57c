@@ -1,0 +1,29 @@
+import java.util.Stack;
+
+public class Deck {
+	private Stack<Card>deck;
+	
+	public Deck(){
+		deck = new Stack<Card>();
+		// ACES
+		deck.push(new Card(Suit.CLUB, "A"));
+		deck.push(new Card(Suit.DIAMOND, "A"));
+		deck.push(new Card(Suit.HEART, "A"));
+		deck.push(new Card(Suit.SPADE, "A"));
+		//KINGS
+		deck.push(new Card(Suit.CLUB, "K"));
+		deck.push(new Card(Suit.DIAMOND, "K"));
+		deck.push(new Card(Suit.HEART, "K"));
+		deck.push(new Card(Suit.SPADE, "K"));
+		//QUEENS
+		deck.push(new Card(Suit.CLUB, "Q"));
+		deck.push(new Card(Suit.DIAMOND, "Q"));
+		deck.push(new Card(Suit.HEART, "Q"));
+		deck.push(new Card(Suit.SPADE, "Q"));
+		
+		
+		
+		
+		
+	}
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="PlayerTest" project="Blackjack" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="PlayerTest" time="0.002">
+    <testcase name="testHit" classname="PlayerTest" time="0.002"/>
+    <testcase name="testInstation" classname="PlayerTest" time="0.0"/>
+  </testsuite>
+</testrun>

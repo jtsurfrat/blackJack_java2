@@ -1,0 +1,12 @@
+import java.util.Stack;
+
+public class Hand {
+	private Stack<Card> hand;
+	private int score = 0;
+	
+	
+	public hand(){
+		hand = new Stack<Card>();
+	}
+
+}

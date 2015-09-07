@@ -1,0 +1,9 @@
+
+public class Dealer extends Player {
+	
+	
+	public String status(){
+		String status = this.getHand().getHand().pop().toString();
+		return status;
+	}
+}

@@ -1,0 +1,6 @@
+
+public class Card {
+	private Suit suit;
+	private String description;
+	private int value;
+}

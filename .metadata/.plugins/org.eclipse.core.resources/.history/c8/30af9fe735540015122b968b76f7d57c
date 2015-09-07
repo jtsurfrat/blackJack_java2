@@ -1,0 +1,18 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class CardTest {
+
+	@Test
+	public void testInstantion() {
+		Card card1 = new Card(Suit.HEART, "5");
+		Card card2 = new Card(Suit.SPADE, "K");
+		
+		assertNotNull(card1);
+		assertNotNull(card2);
+		
+		assertEquals(card2.getValue());
+	}
+
+}

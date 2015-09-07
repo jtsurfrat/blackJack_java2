@@ -1,0 +1,11 @@
+import java.util.Stack;
+
+public class Deck {
+	private Stack<Card>deck;
+	
+	public Deck(){
+		deck = new Stack<Card>();
+		deck.push(new Card(Suit.CLUB, "A"));
+		
+	}
+}

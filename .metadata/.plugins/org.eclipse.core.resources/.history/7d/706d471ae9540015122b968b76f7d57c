@@ -1,0 +1,16 @@
+
+public class GameEngine {
+	
+	public void deal(Player player){
+		
+	}
+
+	public static void main(String[] args) {
+		Deck deck = new Deck();
+		Dealer dealer = new Dealer();
+		Player player1 = new Player();
+		// TODO Auto-generated method stub
+
+	}
+
+}

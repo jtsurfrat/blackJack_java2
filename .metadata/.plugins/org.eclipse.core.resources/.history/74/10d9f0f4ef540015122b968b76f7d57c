@@ -1,0 +1,38 @@
+
+public class Player {
+	protected Hand hand;
+	
+	public Player(){
+		hand = new Hand();
+	}
+	
+	
+	public Card hit(){
+		Card card = Deck.getDeck().pop();
+		hand.addToHand(card);
+		return card;
+
+	}
+
+
+	public Hand getHand() {
+		return hand;
+	}
+
+
+	public void setHand(Hand hand) {
+		this.hand = hand;
+	}
+	
+	
+	public String status(){
+		String status = "";
+		for(Card card : hand.getHand()){
+			status += card.toString() + "\n";
+		}
+		status += "Current score: " + hand.calculateScore();
+		return status;
+	}
+	
+
+}

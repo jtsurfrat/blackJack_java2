@@ -1,0 +1,26 @@
+import java.awt.List;
+import java.util.ArrayList;
+
+public class GameEngine {
+	
+private static ArrayList<Player> players;
+
+	public static void main(String[] args) {
+		Deck deck = new Deck();
+		Dealer dealer = new Dealer();
+		Player player1 = new Player();
+		players = new ArrayList<Player>();
+		players.add(dealer);
+		players.add(player1);
+		// TODO Auto-generated method stub
+		for(Player player : players){
+			player.getHand().addToHand(deck.getCard());
+			player.getHand().addToHand(deck.getCard());
+		}
+		
+		//Generate reports
+		System.out.println(player1.status());
+		System.out.println(dealer.status());
+	}	
+
+}

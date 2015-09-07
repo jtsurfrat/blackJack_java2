@@ -1,0 +1,19 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class HandTest {
+
+	@Test
+	public void testInstation() {
+		Hand hand = new Hand();
+		assertNotNull(hand);
+		assertNotNull(hand.getHand());
+		assertEquals(0, hand.getScore());
+	}
+
+	@Test
+	public void testScore() {
+		fail("Not yet implemented");
+	}
+}

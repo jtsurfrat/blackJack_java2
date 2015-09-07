@@ -1,0 +1,14 @@
+
+public class Dealer extends Player {
+	
+	public String status(){
+		String status = "";
+		this.getHand().getHand().pop().toString()
+		for(Card card : hand.getHand()){
+			status += card.toString() + "\n";
+		}
+		return status;
+	}
+	
+
+}

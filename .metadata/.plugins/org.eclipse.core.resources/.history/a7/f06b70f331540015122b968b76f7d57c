@@ -1,0 +1,21 @@
+
+public class Card {
+	private Suit suit;
+	private String description;
+	private int value;
+	
+	//Constructors
+
+
+	public Card(Suit suit, String description, int value) {
+		super();
+		this.suit = suit;
+		this.description = description;
+		
+		Switch(description) {
+			
+		}
+		this.value = value;
+	}
+
+}

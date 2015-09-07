@@ -1,0 +1,14 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class PlayerTest {
+	Deck deck;
+	Player player1;
+
+	@Test
+	public void Ptest() {
+		fail("Not yet implemented");
+	}
+
+}

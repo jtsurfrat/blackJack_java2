@@ -1,0 +1,25 @@
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class HandTest {
+
+	@Test
+	public void testInstation() {
+		Hand hand = new Hand();
+		assertNotNull(hand);
+		assertNotNull(hand.getHand());
+		assertEquals(0, hand.getScore());
+	}
+
+	@Test
+	public void testScore() {
+		Hand hand = new Hand();
+		Card card1 = new Card(Suit.DIAMOND, "8");
+		Card card2 = new Card(Suit.DIAMOND, "6");
+		hand.addToHand(card1);
+		hand.addToHand(card2);
+		System.out.println(hand.calculateScore());
+		assertEquals(18, hand.calculateScore());
+	}
+}

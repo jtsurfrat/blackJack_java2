@@ -1,0 +1,13 @@
+
+public class Player {
+	private Hand hand;
+	
+	
+	public Card Hit(){
+		Card card = Deck.getDeck().pop();
+		hand.addToHand(card);
+		return card;
+
+	}
+
+}

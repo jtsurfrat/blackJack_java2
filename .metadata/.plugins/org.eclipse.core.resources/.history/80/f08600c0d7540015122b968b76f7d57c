@@ -1,0 +1,8 @@
+
+public class Deck {
+	private Stack<Card>deck;
+	
+	public Deck(){
+		
+	}
+}

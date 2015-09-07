@@ -1,0 +1,49 @@
+
+public class Card {
+	private Suit suit;
+	private String description;
+	private int value;
+	
+	//Constructors
+
+
+	public Card(Suit suit, String description, int value) {
+		super();
+		this.setSuit(suit);
+		this.description = description;
+		
+		if(description == "K" || description == "Q" || description  == "J" || description == "A"){
+			this.value = 10;
+		} else {
+			this.value = Integer.parseInt(description);
+		}
+		this.value = value;
+	}
+
+	public Suit getSuit() {
+		return suit;
+	}
+
+	public void setSuit(Suit suit) {
+		this.suit = suit;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public int getValue() {
+		return value;
+	}
+
+	public void setValue(int value) {
+		this.value = value;
+	}
+	
+	
+
+}

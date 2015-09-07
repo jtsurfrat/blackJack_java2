@@ -1,0 +1,33 @@
+
+public class Player {
+	private Hand hand;
+	
+	public Player(){
+		hand = new Hand();
+	}
+	
+	
+	public Card hit(){
+		Card card = Deck.getDeck().pop();
+		hand.addToHand(card);
+		return card;
+
+	}
+
+
+	public Hand getHand() {
+		return hand;
+	}
+
+
+	public void setHand(Hand hand) {
+		this.hand = hand;
+	}
+	
+	for(Card card : player1.getHand().getHand()){
+		System.out.println(card.toString());
+	}
+	System.out.println(player1.getHand().calculateScore());
+	
+
+}
